@@ -1,0 +1,208 @@
+html{
+    scroll-behavior: smooth;
+}
+
+/* nav start */
+.navbar{
+    background-color: rgb(15, 23, 43);
+}
+
+.navbar .navbar-nav .nav-link{
+    color: #F1F8FF;
+    transition: .5s;
+}
+
+.navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link .active{
+    color: gold;
+}
+/* nav end */
+
+/* home start */
+.hero-header {
+    background: linear-gradient(rgba(15, 23, 43, 0.836), rgba(15, 23, 43, 0.836)), url(../images/image_6.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-header img {
+    animation: imgRotate 50s linear infinite;
+}
+
+@keyframes imgRotate { 
+    100% { 
+        transform: rotate(360deg); 
+    } 
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    color: rgba(255, 255, 255, .5);
+}
+/* home end */
+
+/* about start */
+.breadcrumb-item a{
+    text-decoration: none;
+    color: goldenrod;
+}
+
+.breadcrumb-item a:hover{
+    color: gold;
+}
+
+/* service start */
+.service-item{
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+    transition: .5s;
+}
+
+.service-item:hover{
+    background: rgb(221, 164, 20);
+    color: #ffffff;
+}
+
+.service-item * {
+    transition: .5s;
+}
+
+.service-item:hover * {
+    color: var(--light) !important;
+}
+
+.more h5{
+    color: rgb(3, 3, 71);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.more p{
+    color: rgba(0, 0, 0, 0.514);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* service end */
+
+/* menu start */
+.nav-pills .nav-item .active {
+    border-bottom: 2px solid gold;
+}
+/* menu end */
+.col span{
+    color:  rgb(15, 23, 43);
+    ;
+}
+/* menu end */
+
+/* team start */
+.team-item {
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+    height: calc(100% - 38px);
+    transition: .5s;
+}
+
+.team-item img {
+    transition: .5s;
+}
+
+.team-item:hover img {
+    transform: scale(1.1);
+}
+
+.team-item:hover {
+    height: 100%;
+}
+
+.team-item .btn {
+    border-radius: 38px 38px 0 0;
+}
+
+.d-flex a{
+    color: #F1F8FF;
+}
+/* team end */
+
+/* review start */
+.carousel-inner{
+    background-color: rgba(0, 0, 0, 0.233);
+}
+.carousel-inner h5{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    color: rgb(4, 4, 90);
+}
+
+.carousel-inner  p{
+    color: rgba(0, 0, 0, 0.514);
+}
+/* review end */
+
+/* footer start */
+/* .footer .btn .btn-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F1F8FF;
+    border: 1px solid #FFFFFF;
+    border-radius: 35px;
+    transition: .3s;
+    border-radius: 50px;
+    width: 35px;
+    margin-right: 5px;
+    
+} */
+
+.footer .btn.btn-social:hover {
+    color: gold;
+}
+
+.footer .btn.btn-link {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: .3s;
+    text-decoration: none;
+}
+
+.footer .btn.btn-link::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+
+.footer .copyright {
+    padding: 25px 0;
+    font-size: 15px;
+    border-top: 1px solid rgba(256, 256, 256, .1);
+    margin: 15px 0;
+}
+
+.footer .copyright a {
+    color: gold;
+    text-decoration: none;
+}
+
+.footer .copyright a:hover{
+    color: goldenrod;
+}
+
+.footer .footer-menu a {
+    margin-right: 15px;
+    padding-right: 15px;
+    border-right: 1px solid rgba(255, 255, 255, .1);
+}
+
+.footer .footer-menu a:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: none;
+}
